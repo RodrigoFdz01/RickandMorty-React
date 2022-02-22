@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Inicio from "./Inicio.jsx";
-import Personaje from "./Personajes.jsx";
+import Inicio from "./Components/Inicio";
+import Personaje from "./Components/Personaje";
 
 export default function App() {
   return (
