@@ -12,10 +12,9 @@ const Inicio = () => {
         ? personajes.map((personaje) => (
             <div key={personaje.id}>
               <a href={`personaje/${personaje.id}`}>{personaje.name} </a>
-              <img src={personaje.image} alt="" />
             </div>
           ))
-        : "no hay info"}
+        : "no hay lista de personajes"}
     </>
   );
 };
