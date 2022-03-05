@@ -6,7 +6,7 @@ const Personaje = () => {
   const [personaje, setPersonaje] = useState(null);
 
   const params = useParams();
-
+  console.log(personaje);
   useEffect(() => {
     unicoPersonaje(params.id, setPersonaje);
   }, []);
@@ -15,13 +15,17 @@ const Personaje = () => {
     <>
       {personaje != null ? (
         <div>
-          <h2>Personaje con el id {params.id}</h2>
-          <p>Nombre: {personaje.name}</p>
+          <h2>Character ID: Number {params.id}</h2>
+          <p>Name: {personaje.name}</p>
+          <p>Specie: {personaje.species}</p>
+          <p>Origin: {personaje.origin.name}</p>
+          <p>Status: {personaje.status}</p>
           <img src={personaje.image} alt="" />
         </div>
       ) : (
         "no hay personaje"
       )}
+      <button>Back</button>
     </>
   );
 };

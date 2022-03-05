@@ -1,5 +1,18 @@
+.picture {
+  text-align: center;
+}
 .navfilter {
   display: flex;
   justify-content: space-around;
   background-color: blue;
+  height: 45px;
+}
+
+.inputText {
+  font-size: 1.2rem;
+}
+
+.selectSpecie {
+  font-size: 1.2rem;
+  justify-content: center;
 }
