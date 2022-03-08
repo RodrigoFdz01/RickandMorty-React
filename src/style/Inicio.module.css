@@ -1,9 +1,28 @@
 .grid {
   display: grid;
-  grid-gap: 4rem 3rem;
+  grid-gap: 4rem 5rem;
   grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
   max-width: 100%;
   padding: 50px;
   justify-content: center;
   margin: 2% 3% 2% 3%;
+}
+
+.picture {
+  max-width: 100%;
+  max-width: 100%;
+}
+
+.card {
+  box-shadow: none;
+  text-align: center;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 8px 4px rgba(66, 65, 65, 0.7);
+}
+
+.name {
+  text-decoration: none;
+  list-style: none;
 }
