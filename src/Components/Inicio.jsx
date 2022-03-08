@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { todosPersonajes } from "../Functions/Functions";
-import "../style/Inicio.css";
+import style from "../style/Inicio.module.css";
+import Card from "./Card";
 
 const Inicio = () => {
   const [personajes, setPersonajes] = useState(null);
@@ -8,19 +9,18 @@ const Inicio = () => {
     todosPersonajes(setPersonajes);
   }, []);
   return (
-    <>
-      <div className="listname">
-        {personajes != null
-          ? personajes.map((personaje) => (
-              <div key={personaje.id}>
-                <img className="foto" src={personaje.image} alt="" />
-                <a href={`personaje/${personaje.id}`}>{personaje.name} </a>
-              </div>
-            ))
-          : "no hay lista de personajes"}
-      </div>
-    </>
+    <div className={style.grid}>
+      <Card />
+    </div>
   );
 };
 
 export default Inicio;
+
+/*
+<div className={styles.gridcard}>
+     <div className={styles.gridcard}>
+      <Card />
+    </div>
+    </div>
+*/

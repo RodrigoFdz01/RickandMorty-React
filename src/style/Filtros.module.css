@@ -3,8 +3,8 @@
 }
 .navfilter {
   display: flex;
-  justify-content: space-around;
-  background-color: blue;
+  justify-content: space-evenly;
+  background-color: #2196f3;
   height: 45px;
 }
 
@@ -13,6 +13,10 @@
 }
 
 .selectSpecie {
+  font-size: 1.2rem;
+  justify-content: center;
+}
+.selectStatus {
   font-size: 1.2rem;
   justify-content: center;
 }

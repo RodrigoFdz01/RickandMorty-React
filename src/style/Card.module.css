@@ -1,0 +1,18 @@
+.card {
+  background-color: #607d8b;
+  text-align: center;
+}
+.card:hover {
+  box-shadow: 0px 0px 8px 4px #393f3b;
+}
+.foto {
+  width: 100%;
+}
+
+.name {
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: white;
+  padding: 40px;
+}
