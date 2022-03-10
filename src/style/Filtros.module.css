@@ -1,22 +1,32 @@
 .picture {
   text-align: center;
 }
+.image {
+  width: 70%;
+  margin: 0px;
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
+}
 .navfilter {
   display: flex;
   justify-content: space-evenly;
-  background-color: #2196f3;
-  height: 45px;
+  background-color: #239144;
+  height: 75px;
+  align-items: center;
 }
 
-.inputText {
+.inputText input {
   font-size: 1.2rem;
+  height: 50%;
 }
 
-.selectSpecie {
+.selectSpecie select {
   font-size: 1.2rem;
-  justify-content: center;
+  height: 50%;
+  color: rgb(116, 119, 119);
 }
-.selectStatus {
+.selectStatus select {
   font-size: 1.2rem;
-  justify-content: center;
+  height: 50%;
+  color: rgb(116, 119, 119);
 }

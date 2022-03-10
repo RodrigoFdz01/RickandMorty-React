@@ -11,6 +11,10 @@
 .picture {
   max-width: 100%;
   max-width: 100%;
+  border-radius: 50%;
+}
+.picture:hover {
+  border-radius: 0;
 }
 
 .card {
@@ -20,9 +24,12 @@
 
 .card:hover {
   box-shadow: 0px 0px 8px 4px rgba(66, 65, 65, 0.7);
+  background-color: rgb(109, 105, 103);
 }
 
 .name {
+  color: white;
   text-decoration: none;
   list-style: none;
+  padding: 3%;
 }

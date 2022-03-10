@@ -14,12 +14,12 @@ const Inicio = () => {
       <div className={style.grid}>
         {personajes != null
           ? personajes.map((personaje) => (
-              <Link to={`/personaje/${personaje.id}`}>
-                <div className={style.card} key={personaje.id}>
+              <div className={style.card} key={personaje.id}>
+                <Link to={`/personaje/${personaje.id}`}>
                   <img className={style.picture} src={personaje.image} alt="" />
-                  <p className={style.name}>{personaje.name}</p>
-                </div>
-              </Link>
+                </Link>
+                <p className={style.name}>{personaje.name}</p>
+              </div>
             ))
           : "no hay info"}
       </div>
