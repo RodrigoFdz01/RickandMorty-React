@@ -6,6 +6,7 @@
   padding: 50px;
   justify-content: center;
   margin: 2% 3% 2% 3%;
+  background: url() no-repeat;
 }
 
 .picture {
@@ -24,7 +25,7 @@
 
 .card:hover {
   box-shadow: 0px 0px 8px 4px rgba(66, 65, 65, 0.7);
-  background-color: rgb(109, 105, 103);
+  background-color: #14c2dd;
 }
 
 .name {

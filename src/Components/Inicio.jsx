@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { todosPersonajes } from "../Functions/Functions.js";
 import style from "../style/Inicio.module.css";
 import { Link } from "react-router-dom";
+//import back from '../background.jpg'
 
 const Inicio = () => {
   const [personajes, setPersonajes] = useState(null);

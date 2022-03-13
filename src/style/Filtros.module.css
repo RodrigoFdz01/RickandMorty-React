@@ -1,18 +1,19 @@
-.picture {
-  text-align: center;
-}
 .image {
-  width: 70%;
-  margin: 0px;
+  width: 50%;
+  margin-left: 25%;
   filter: brightness(1.1);
   mix-blend-mode: multiply;
 }
 .navfilter {
   display: flex;
   justify-content: space-evenly;
-  background-color: #239144;
-  height: 75px;
+  height: 55px;
+  width: 90%;
   align-items: center;
+
+  background-color: #14c2dd;
+  margin: auto;
+  border-radius: 10px;
 }
 
 .inputText input {

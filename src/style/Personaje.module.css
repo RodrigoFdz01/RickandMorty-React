@@ -1,0 +1,19 @@
+.container {
+  text-align: center;
+}
+
+.name {
+  font-size: 2rem;
+  font-style: oblique;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.button {
+  background-color: rgb(92, 95, 92);
+  font-size: 1.2rem;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 3px;
+  width: 70px;
+}
