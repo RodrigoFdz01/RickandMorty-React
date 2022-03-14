@@ -9,13 +9,14 @@ const Filtros = () => {
       <div className={style.picture}>
         <img src={imagen} className={style.image} alt="imagen" />
       </div>
+
       <form>
         <div className={style.navfilter}>
           <div className={style.inputText}>
             <input
               type="text"
               placeholder="Write your character"
-              /* onChange={}
+              /*    onChange={}
             value={}*/
             />
           </div>
@@ -33,7 +34,7 @@ const Filtros = () => {
           </div>
           <div className={style.selectStatus}>
             <select
-            /* onChange={}
+            /*  onChange={}
             value={}}*/
             >
               <option value="">Status</option>

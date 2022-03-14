@@ -8,11 +8,10 @@ import Personaje from "./Components/Personaje";
 export default function App() {
   return (
     <div className="App">
-      <Filtros />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Inicio />}></Route>
-          <Route path="/" element={<Filtros />}></Route>
+          <Route exact path="/Inicio" element={<Inicio />}></Route>
+          <Route path="/Filtros" element={<Filtros />}></Route>
           <Route path="/personaje/:id" element={<Personaje />}></Route>
         </Routes>
       </BrowserRouter>

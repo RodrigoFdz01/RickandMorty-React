@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { todosPersonajes } from "../Functions/Functions.js";
 import style from "../style/Inicio.module.css";
 import { Link } from "react-router-dom";
-//import back from '../background.jpg'
+
+import Filtros from "./Filtros.jsx";
 
 const Inicio = () => {
   const [personajes, setPersonajes] = useState(null);
@@ -12,6 +13,8 @@ const Inicio = () => {
   }, []);
   return (
     <>
+      <Filtros />
+
       <div className={style.grid}>
         {personajes != null
           ? personajes.map((personaje) => (
