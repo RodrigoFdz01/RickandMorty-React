@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { unicoPersonaje } from "../Functions/Functions";
 import style from "../style/Personaje.module.css";
+
 import { Link } from "react-router-dom";
 
 const Personaje = () => {
@@ -36,7 +37,7 @@ const Personaje = () => {
               {personaje.gender}
             </p>
             <img src={personaje.image} alt="" />
-            <Link to={`/Inicio/`}>
+            <Link to={`/`}>
               <div>
                 <button className={style.button}>Back</button>
               </div>
