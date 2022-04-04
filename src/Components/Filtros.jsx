@@ -1,6 +1,6 @@
 //import React, { useEffect, useState } from "react";
 //import { todosPersonajes } from "../Functions/Functions";
-import imagen from "../logo.png";
+import imagen from "../rickandmorty.png";
 import style from "../style/Filtros.module.css";
 
 const Filtros = () => {
