@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { unicoPersonaje } from "../Functions/Functions";
 
 const Personaje = () => {
@@ -25,7 +25,9 @@ const Personaje = () => {
       ) : (
         "no hay personaje"
       )}
-      <button>Back</button>
+      <Link to={"/"}>
+        <button>Back</button>
+      </Link>
     </>
   );
 };
