@@ -11,3 +11,25 @@
 .foto {
   height: 200px;
 }
+.picture {
+  text-align: center;
+}
+.navfilter {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #2196f3;
+  height: 45px;
+}
+
+.inputText {
+  font-size: 1.2rem;
+}
+
+.selectSpecie {
+  font-size: 1.2rem;
+  justify-content: center;
+}
+.selectStatus {
+  font-size: 1.2rem;
+  justify-content: center;
+}
