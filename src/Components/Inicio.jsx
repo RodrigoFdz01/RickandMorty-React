@@ -4,7 +4,8 @@ import style from "../style/Inicio.module.css";
 import imagen from "../rickandmorty.png";
 
 const Inicio = () => {
-  const [personajes, setPersonajes] = useState(null);
+  const [personajes, setPersonajes] = useState([]);
+
   const [search, setSearch] = useState("");
   //console.log(search);
 
@@ -13,11 +14,18 @@ const Inicio = () => {
   }
   function handleChange(event) {
     setSearch(event.target.value);
-    console.log(search);
+    //
   }
-  /*personajes.filter((search) =>
-        search.name.toLowercase().includes(search.toLowercase())
-        */
+
+  let results = [];
+
+  if (!search) {
+    results = personajes;
+  } else {
+    results = personajes.filter((dato) =>
+      dato.name.toLowerCase().includes(search.toLowerCase())
+    );
+  }
 
   useEffect(() => {
     todosPersonajes(setPersonajes);
@@ -41,16 +49,14 @@ const Inicio = () => {
         </button>
       </div>
       <div className={style.card}>
-        {personajes != null
-          ? personajes.map((personaje) => (
-              <div key={personaje.id}>
-                <img className={style.foto} src={personaje.image} alt="" />
-                <a className={style.name} href={`personaje/${personaje.id}`}>
-                  {personaje.name}{" "}
-                </a>
-              </div>
-            ))
-          : "ddddd"}
+        {results.map((personaje) => (
+          <div key={personaje.id}>
+            <img className={style.foto} src={personaje.image} alt="" />
+            <a className={style.name} href={`personaje/${personaje.id}`}>
+              {personaje.name}{" "}
+            </a>
+          </div>
+        ))}
       </div>
     </>
   );
