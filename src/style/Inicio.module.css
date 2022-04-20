@@ -1,4 +1,38 @@
-.grid {
+.containerimage {
+  width: 100%;
+}
+.image {
+  margin-left: 20%;
+}
+.navfilter {
+  display: flex;
+  justify-content: space-evenly;
+  height: 55px;
+  width: 90%;
+  align-items: center;
+  background-color: #14c2dd;
+  margin: auto;
+  border-radius: 10px;
+}
+.inputText {
+  font-size: 1.3rem;
+}
+
+.clear {
+  background: rgb(248, 246, 246);
+  color: rgb(97, 94, 94);
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(97, 94, 94);
+}
+.clear:hover {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.cardcontainer {
   display: grid;
   grid-gap: 4rem 5rem;
   grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
@@ -6,30 +40,31 @@
   padding: 50px;
   justify-content: center;
   margin: 2% 3% 2% 3%;
-}
-
-.picture {
-  max-width: 100%;
-  max-width: 100%;
-  border-radius: 50%;
-}
-.picture:hover {
-  border-radius: 0;
-}
-
-.card {
   box-shadow: none;
   text-align: center;
 }
 
+.card {
+  height: auto;
+}
 .card:hover {
+  background-color: #12c1d8;
   box-shadow: 0px 0px 8px 4px rgba(66, 65, 65, 0.7);
-  background-color: #14c2dd;
+  color: blueviolet;
 }
 
+.fotocard {
+  max-width: 100%;
+  max-width: 100%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.fotocard:hover {
+  border-radius: 0;
+}
 .name {
-  color: white;
-  text-decoration: none;
   list-style: none;
-  padding: 3%;
+  text-decoration: none;
+  color: rgb(83, 82, 82);
+  padding: 20px;
 }
