@@ -1,3 +1,4 @@
+Esta aplicación web muestra un listado de personajes de la serie de animación Rick & Morty, permite hacer búsquedas por nombre y ampliar información de cada personaje clicando en su tarjeta.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
